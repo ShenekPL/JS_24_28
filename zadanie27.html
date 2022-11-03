@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+			function okno_zamknij()
+			{
+			window.close()
+			}
+
+			var autobus = {
+			bilet_cena: '3.78zl',
+			kierowca: "Adam Kowalski",
+			marka: "Scania",
+			autobus_wyswietl_freda: function ()
+			{
+			document.write(this.kierowca + " " + this.marka)
+			}
+			}
+			autobus.autobus_wyswietl_freda();
+			autobus.serwisant = "Kamil Staryca";
+			autobus.pudelko_pokaz_freda()=function() {
+			alert("Serwisant: " + this.serwisant)}
+			autobus.pudelko_pokaz_freda();
+		</script>
+	</head>
+	<body>
+
+		<input type="button" value="zamknij okno" onclick="okno_zamknij()">
+	</body>
+</html>
